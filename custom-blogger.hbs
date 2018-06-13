@@ -60,22 +60,19 @@ into the {body} of the default.hbs template --}}
 
             </footer>
 
-            
             <section class="post-full-comments">
-                <div id="disqus_thread"></div>
-                    <script>
-                        var disqus_config = function () {
-                            this.page.url = '{{url absolute=true}}'; 
-                            this.page.identifier = '{{comment_id}}'; 
-                        };
-                        (function() {
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://jessehouwingnl.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                        </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            <script src="https://apis.google.com/js/plusone.js"></script>
+                <div id="comments"></div>
+                <script>
+                    if (bloggerUrl){
+                        gapi.comments.render('comments', {
+                            href: bloggerUrl,
+                            width: '624',
+                            first_party_property: 'BLOGGER',
+                            view_type: 'FILTERED_POSTMOD'
+                        });
+                    }
+                </script>
             </section>
 
         </article>
