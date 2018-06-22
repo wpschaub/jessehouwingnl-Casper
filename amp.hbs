@@ -763,15 +763,19 @@
 </head>
 
 <body class="amp-template">
+    {{#post}}
     <amp-analytics type="googleanalytics">
         <script type="application/json">
-            { 
-                "vars": { "account": "UA-29964481-1" }, "triggers": { "trackPageview": { "on": "visible", "request": "pageview" } }
+            {
+            "vars": { "account": "UA-29964481-1" }, "triggers": { "trackPageview": { "on": "visible", "request": "pageview",
+            "vars": {
+            "title": "{{title}}",
+            "documentLocation": "{{url absolute=true}}"
+            } } }
             }
         </script>
     </amp-analytics>
 
-    {{#post}}
     <header class="main-header">
         <nav class="blog-title">
             <a href="{{@blog.url}}">{{@blog.title}}</a>
