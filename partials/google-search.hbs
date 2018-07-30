@@ -1,0 +1,61 @@
+<style>
+    .search-wrapper .gsc-control-searchbox-only {
+        box-sizing: initial;
+        height: 2.1rem;
+        width: 25rem;
+        line-height: 1rem;
+    }
+    .search-wrapper .gsc-control-searchresults-only {
+        box-sizing: initial;
+        width: 100%;
+        line-height: 1.5rem;
+    }
+    .search-wrapper .gsc-adBlock {
+        display: none !important;
+    }
+    .gsc-search-box-tools .gsc-search-box .gsc-input {
+        margin-top: 0 !important;
+        padding-right: 0 !important!;
+        color: black;
+    }
+    .search-wrapper .gsc-search-box .gsc-search-button {
+        margin-left: 0 !important;
+    }
+    .search-wrapper .gsc-control-cse table {
+        background: none;
+        overflow-x: initial;
+        line-height: 1em;
+        margin: 0;
+        white-space: normal;
+    }
+    .gcsc-branding, .gsc-branding-text, .gsc-branding-img {
+        display: none !important;
+    }
+    .search-wrapper .gsc-control-cse table td {
+        border: none;
+        padding: 0;
+    }
+    .search-wrapper .gsc-search-box .gsc-input>input:focus,
+    .search-wrapper .gsc-input-box-focus {
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    .search-wrapper .gsc-results img {
+        margin: 0;
+    }
+</style>
+<div class="search-wrapper">
+    <script>
+    (function() {
+        var cx = '018324605020134612811:tngh-jtdjva';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+    </script>
+    <gcse:searchbox-only></gcse:searchbox-only>
+</div>
