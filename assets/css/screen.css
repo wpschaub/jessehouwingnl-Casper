@@ -312,6 +312,14 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     fill: #fff;
 }
 
+.social-link-in svg {
+    height: 1.5rem;
+}
+
+.social-link-gh svg {
+    height: 1.5rem;
+}
+
 .social-link-fb svg {
     height: 1.5rem;
 }
