@@ -1802,6 +1802,7 @@ Usage (In Ghost editor):
     .floating-header-logo {
         font-size: 1.5rem;
     }
+    .floating-header-share-li,
     .floating-header-share-tw,
     .floating-header-share-fb {
         width: 40px;
