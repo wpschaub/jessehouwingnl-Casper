@@ -1727,7 +1727,8 @@ Usage (In Ghost editor):
 }
 
 .floating-header-share-tw,
-.floating-header-share-fb {
+.floating-header-share-fb,
+.floating-header-share-li {
     display: block;
     align-items: center;
     width: 60px;
@@ -1744,6 +1745,10 @@ Usage (In Ghost editor):
 
 .floating-header-share-fb {
     background: #005e99;
+}
+
+.floating-header-share-li {
+    background: #4276B1;
 }
 
 .progress {
