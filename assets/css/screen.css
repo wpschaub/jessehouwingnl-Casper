@@ -200,9 +200,11 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     overflow-y: hidden;
-    height: 40px;
+    height: 50px;
     font-size: 1.2rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 5px;
+    padding: 5px 10px 10px 10px;
 }
 
 .site-nav-left {
